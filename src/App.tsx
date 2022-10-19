@@ -11,6 +11,8 @@ import Button from "./Components/EventProps/Button";
 import Input from "./Components/EventProps/onchangepops";
 import Container from "./Components/StyleProps/Container";
 import LoggedIn from "./Components/useStateHook.tsx/Loggedin";
+import Private from "./Components/componentProp/private";
+import Profile from "./Components/componentProp/profile";
 
 function App() {
   const NameList=[
@@ -45,6 +47,7 @@ function App() {
     <Input />
     <Container styles={{border:'2px solid red' , width:100,height:100}} />
     <LoggedIn />
+    <Private isLoggedIn={true} Component={Profile} />
   </div>
   )
 }
